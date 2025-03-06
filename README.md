@@ -1,4 +1,4 @@
-# Up Skill
+# Upskill
 Skills-based Job Search Portal
 
 - Job needs skills. 
