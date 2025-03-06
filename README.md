@@ -1,4 +1,4 @@
-# ReSkill
+# Up Skill
 Skills-based Job Search Portal
 
 - Job needs skills. 
@@ -12,7 +12,7 @@ Skills-based Job Search Portal
 - Pre-assessment to skip training. 
 - Browser based Code editor (container based infra and teardown).
 
-[Try it out](https://feedback.reskill.io)
+[Try it out](https://feedback.upskill.io)
 
 ## Features
 
@@ -26,7 +26,7 @@ Skills-based Job Search Portal
 
 ## Get started
 
-Read the [Deploy with Docker instructions](https://docs.reskill.io/deploy-docker) for the most comprehensive and up to date guide on installing and configuring reskill.
+Read the [Deploy with Docker instructions](https://docs.upskill.io/deploy-docker) for the most comprehensive and up to date guide on installing and configuring upskill.
 
 What you find below are minimal instructions to get you started as quickly as possible:
 
@@ -43,7 +43,7 @@ services:
     volumes:
       - dbdata:/var/lib/postgresql/data
   web:
-    image: ranjitklive/reskill:latest
+    image: ranjitklive/upskill:latest
     environment:
       <<: *db-env
       BASE_URL: http://yourwebsite.com
@@ -56,11 +56,11 @@ services:
 volumes:
   dbdata:
 ```
-3. Edit the environment variables to fit your needs. You can find more information about env variables in the [documentation](https://docs.reskill.io/deploy-docker/#2-edit-environment-variables).
+3. Edit the environment variables to fit your needs. You can find more information about env variables in the [documentation](https://docs.upskill.io/deploy-docker/#2-edit-environment-variables).
 4. Run `docker compose pull && docker compose up`
 5. You should now have a running instance of Astuto on port 3000. A default user account has been created with credentials email: `admin@example.com`, password: `password`.
 
 ## Documentation
 
-Check out [docs.reskill.io](https://docs.reskill.io/) to learn how to deploy reskill, configure custom OAuth providers and webhooks, use our REST API and more!
+Check out [docs.upskill.io](https://docs.upskill.io/) to learn how to deploy upskill, configure custom OAuth providers and webhooks, use our REST API and more!
 
